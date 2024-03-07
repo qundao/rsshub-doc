@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodule: 'recursive'
       - name: Sync docs
         run: |
           git submodule update --init --recursive
