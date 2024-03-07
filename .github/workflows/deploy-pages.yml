@@ -23,7 +23,7 @@ jobs:
           name=docusaurus.config.ts
           cp ${name} bak1-${name}
           sed -E "s/url: '.+',/url: 'https:\/\/hantang.github.io',/" < bak1-${name} > bak2-${name}
-          sed -E "s/baseUrl: .+,/baseUrl: '\/wayback-rsshub-doc\/'/" < bak2-${name} > bak1-${name}
+          sed -E "s/baseUrl: .+,/baseUrl: '\/wayback-rsshub-doc\/',/" < bak2-${name} > bak1-${name}
           mv bak1-${name} ${name}
 
       - uses: pnpm/action-setup@v3
