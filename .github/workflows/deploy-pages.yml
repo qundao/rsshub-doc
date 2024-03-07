@@ -16,9 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: pnpm/action-setup@v3
         with:
-          node-version: latest
+          version: 8
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'pnpm'
+          registry-url: 'https://registry.npmjs.org'
       - name: Sync docs
         run: |
           git submodule update --init --recursive
@@ -28,7 +33,7 @@ jobs:
           sed -E "s/url: '.+',/url: 'https:\/\/hantang.github.io',/" < bak1-${name} > bak2-${name}
           sed -E "s/baseUrl: .+,/baseUrl: '\/wayback-rsshub-doc\/'/" < bak2-${name} > bak1-${name}
           mv bak1-${name} ${name}
-      - name: Install Dependencies
+      - name: Install dependencies (pnpm)
         run: pnpm install
       - name: Build Site
         run: pnpm run build
