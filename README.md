@@ -6,6 +6,8 @@ powered by [Docusaurus](https://docusaurus.io).
 
 ## Instances
 
+[Public Instances](https://hantang.fun/wayback-rsshub-doc/instances/)
+
 |     | URL                                                              | Location | Maintainer                                            | Online                                                                                                      |
 | --: | :--------------------------------------------------------------- | :------- | :---------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
 |   0 | [rsshub.app](https://rsshub.app) **Official**                    | 🇺🇸       | [DIYgod](https://diygod.cc)                           | ![](https://img.shields.io/website.svg?label=&url=https%3A%2F%2Frsshub.app%2Ftest%2Fcache)                  |
