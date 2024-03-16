@@ -1,5 +1,7 @@
 # wayback-rsshub-doc
 
+[![Deploy Docusaurus Docs](https://github.com/qundao/rsshub-doc/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/qundao/rsshub-doc/actions/workflows/deploy-pages.yml)
+
 A backup and deploy of document website of
 [RSSHub](https://github.com/DIYgod/RSSHub),
 powered by [Docusaurus](https://docusaurus.io).
